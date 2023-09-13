@@ -9,7 +9,7 @@ create Table moeda (id serial primary KEY,
 					 Volume REAL,
 					 Cap_de_Mercado REAL);
                      
-INSERT INTO moedas(Nome,Simbolo,Data,Maximo,Minimo,Abertura,Fechamento,Volume,cap_de_mercado)
+INSERT INTO moeda(Nome,Simbolo,Data,Maximo,Minimo,Abertura,Fechamento,Volume,cap_de_mercado)
 VALUES('Aave','AAVE','2020-10-05',55.11235847,49.78789992,52.67503496,53.21924296,0.0,89128128.86084658),
 ('Aave','AAVE','2020-10-06',53.40227002,40.73457791,53.29196931,42.40159861,583091.4597628,71011441.25451232),
 ('Aave','AAVE','2020-10-07',42.40831364,35.97068975,42.39994711,40.08397561,682834.18632335,67130036.89981823),
