@@ -9,7 +9,7 @@ dias = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11 ,12 ,13 ,14 ,15 ,16 ,17]
 esforco_planejado = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34]
 
 # Esforço realizado - media de 2 tarefas concluídas por dia
-esforco_realizado = [0, 3, 3, 9, 10, 11, 13, 14, 14, 19, 19, 19, 26, 28, 30, 32, 34]
+esforco_realizado = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34]
 
 # Calcular o esforço restante
 esforco_restante = [esforco_planejado[i] - esforco_realizado[i] for i in range(len(dias))]
@@ -21,7 +21,7 @@ plt.plot(dias, esforco_realizado, label='Esforço Realizado', marker='x')
 plt.plot(dias, esforco_restante, label='Esforço Restante', marker='s')
 plt.title('Gráfico de Burndown')
 plt.xlabel('Dias')
-plt.ylabel('Qnt Tarefas')
+plt.ylabel('Esforço')
 plt.legend()
 plt.grid(True)
 plt.show()
