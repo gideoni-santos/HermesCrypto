@@ -1,5 +1,5 @@
-# Mercado de Criptomoedas
-*Desde o surgimento do Bitcoin em 2009, as criptomoedas evoluíram significativamente. Novas moedas digitais foram criadas, cada uma com tecnologias e objetivos distintos. O mercado de criptomoedas cresceu rapidamente, atraindo investidores e especuladores. Em 2013, houve a ascensão de altcoins, como o Litecoin. Em 2017, o Bitcoin alcançou grande notoriedade, atingindo altos valores e impulsionando a popularização das criptos. Em 2020, instituições financeiras começaram a investir em Bitcoin, e a DeFi (Finanças Descentralizadas) ganhou destaque. No início de 2021, o Bitcoin atingiu um preço recorde, superando US$ 60.000, e criptos como Ethereum também valorizaram. No entanto, a volatilidade persistiu, e houve debates regulatórios em várias partes do mundo.*
+# HermesCrypto
+ Análise das principais cryptomoedas listadas no mercado
 
  ## Contato dos colaboradores
 
