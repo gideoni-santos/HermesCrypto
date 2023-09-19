@@ -3,25 +3,21 @@ import matplotlib.pyplot as plt
 
 
 # Dias corridos
-dias = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ,11 ,12 ,13 ,14 ,15 ,16 ,17]
+dias = [17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
 
 # Esforço planejado - ao menos 2 tarefas por dia
-esforco_planejado = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34]
+esforco_planejado = [34,32,30,28,26,24,22,20,18,16,14,12,10,8,6,4,2]
 
-# Esforço realizado - media de 2 tarefas concluídas por dia
-esforco_realizado = [0, 3, 3, 9, 10, 11, 13, 14, 14, 19, 19, 19, 26, 28, 30, 32, 34]
+# Esforço realizado 
+esforco_realizado = [34,31,31,25,24,23,21,20,20,19,19,15,15,11,8,5,0]
 
-# Calcular o esforço restante
-esforco_restante = [esforco_planejado[i] - esforco_realizado[i] for i in range(len(dias))]
-
-# Criar o gráfico de burndown
+#  [::-1] técnica de indexação que inverte a ordem dos elementos na lista
 plt.figure(figsize=(10, 6))
-plt.plot(dias, esforco_planejado, label='Esforço Planejado', marker='o')
-plt.plot(dias, esforco_realizado, label='Esforço Realizado', marker='x')
-plt.plot(dias, esforco_restante, label='Esforço Restante', marker='s')
+plt.plot(dias, esforco_planejado[::-1], label='Esforço Planejado', marker='o')
+plt.plot(dias, esforco_realizado[::-1], label='Esforço Realizado', marker='x')
 plt.title('Gráfico de Burndown')
 plt.xlabel('Dias')
-plt.ylabel('Qnt Tarefas')
+plt.ylabel('Esforço')
 plt.legend()
 plt.grid(True)
 plt.show()
@@ -31,9 +27,9 @@ plt.show()
 
 # Dados
 colab_tarefas = [
-    {'Equipe':'Dev Python','Tarefas Concluidas':5},
-    {'Equipe': 'Databank','Tarefas Concluidas':4},
-    {'Equipe':'Business Intelligence','Tarefas Concluidas':7}
+    {'Equipe':'Dev Python','Tarefas Concluidas':8},
+    {'Equipe': 'Databank','Tarefas Concluidas':7},
+    {'Equipe':'Business Intelligence','Tarefas Concluidas':11}
 ]
 
 # Extrair nomes de equipe e tarefas concluídas
